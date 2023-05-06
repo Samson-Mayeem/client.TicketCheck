@@ -1,0 +1,37 @@
+.delivery-card {
+    background-color: #F7F7F7;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .payment-card {
+    background-color: #F7F7F7;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .total-card {
+    background-color: #E0E0E0;
+    border: 2px solid #CCCCCC;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: #333333;
+  }
+  
+  .card-header {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #CCCCCC;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card p {
+    margin-bottom: 5px;
+  }
+  
