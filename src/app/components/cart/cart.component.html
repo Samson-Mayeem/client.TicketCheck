@@ -3,40 +3,108 @@
     <!-- Delivery Card -->
     <div class="card delivery-card">
       <div class="card-header">
-        Delivery
+        <span style="margin: 20px; margin-bottom: 49px;">Delivery</span>
+        <div class="circle">
+          <span><img src="assets/images/icons8-done-48.png"></span>
+        </div>
       </div>
       <div class="card-body">
+        <div>
+          <header>Mobile Entry - Free</header>
+        </div>
         <p>Delivery Address: 123 Main Street</p>
-        <p>Expected Delivery Date: May 10, 2023</p>
+        <p>Tickets Available by Sun Apr 3, 2022
+          These mobile tickets will be transferred directly to you from a trusted seller. We'll email you instructions on how to accept them on the original ticket provider's mobile app.</p>
       </div>
     </div>
 
     <!-- Payment Card -->
     <div class="card mt-4 payment-card">
       <div class="card-header">
-        Payment
+        <span>Payment</span>
+        <div class="circle">
+          <span><img src="assets/images/icons8-done-48.png"></span>
+        </div>
       </div>
       <div class="card-body">
         <p>Payment Method: Credit Card</p>
-        <p>Credit Card Number: **** **** **** 1234</p>
-        <p>Expiration Date: 12/23</p>
+        <p>Use Credit/Debit Card</p>
+        <section>
+          <ul style="display: inline-flex; list-style: none;">
+            <li><strong>VISA</strong></li>
+            <li>Visa - 9999</li>
+            <ul style="display: inline-flex; list-style: none; margin: 4px;">
+              <li>User Name</li> |
+              <li>exp. 00/11</li>
+            </ul>
+          </ul>
+          <br>
+          <br>
+          <button class ="edit">Edit</button> | <button class="delete">Delete</button><br>
+          <label>Security Code</label><br>
+          <div class="custom-input">
+            <input type="password" placeholder="..." />
+
+            <img src="assets/images/icons8-done-48.png" alt="Image description" class="circle">
+          </div><br>
+
+          <img src="assets/images/plus.png" style="height: 100px; ">
+            <img src="assets/images/icons8-card-50.png">
+            <button class="primary">Add New Card</button><br>
+              3-digits on back of card<br>
+              Or Pay With<br>
+              By using a digital wallet and continuing past this page, you have read and are accepting the <a routerLink="">Terms of Use.</a>
+        </section>
+
       </div>
     </div>
   </div>
-
   <div class="col-md-6 text-right">
     <!-- Total Card -->
     <div class="card total-card">
       <div class="card-header">
-        Total
+        Total <span class="result">$549.11</span>
       </div>
       <div class="card-body">
-        <p>Subtotal: $50.00</p>
-        <p>Tax: $3.50</p>
-        <p>Shipping: Free</p>
-        <hr>
-        <p><strong>Total: $53.50</strong></p>
+        <p>Tickets</p>
+        <p>
+          <span>Resale Tickets: $229.00 x 2</span>
+          <span class="result">$458.00</span>
+        </p>
+        <p>
+          xfr XFER Proof of at least one dose of COVID-19 vaccination for ages 5 to 11 and guests ages 12 and up will be required to show proof of two COVID-19 vaccine doses or one dose of the Johnson & Johnson vaccine. Masks must be worn.
+        </p>
+        <p><strong>Fee</strong></p>
+        <p>
+          <span>Service Fee: $44.08 x 2</span>
+          <span class="result">$88.16</span>
+        </p>
+        <p>
+          <span>Order Processing Fee</span>
+          <span class="result">$2.95</span>
+        </p>
+        <p><strong>Delivery</strong></p>
+        <p>
+          <span>Mobile Entry</span>
+          <span class="result">Free</span>
+        </p>
+        <a routerLink="#">Cancel Order</a>
+        <ul>
+          <li>*All Sales Final - No Refunds</li>
+          <li>
+            <label class="check-button">
+              <input type="checkbox">
+              <span class="check-mark"></span>
+            </label>I have read and agree to the current Terms of Use.
+              Place Order
+          </li>
+        </ul>
+
+
+
       </div>
     </div>
+    <button class="primary">Place Order</button>
+    <small>*Exceptions may apply, see our Terms of Use.</small>
   </div>
 </div>

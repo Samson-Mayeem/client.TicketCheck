@@ -1,37 +1,100 @@
-.delivery-card {
-    background-color: #F7F7F7;
-    border: 2px solid #E0E0E0;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  .payment-card {
-    background-color: #F7F7F7;
-    border: 2px solid #E0E0E0;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  .total-card {
-    background-color: #E0E0E0;
-    border: 2px solid #CCCCCC;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    color: #333333;
-  }
-  
-  .card-header {
-    background-color: #FFFFFF;
-    border-bottom: 2px solid #CCCCCC;
-    font-weight: bold;
-    padding: 10px;
-  }
-  
-  .card-body {
-    padding: 10px;
-  }
-  
-  .card p {
-    margin-bottom: 5px;
-  }
-  
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.card-header {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: left; /* Align text to the left */
+}
+
+.edit,.delete {
+  border: none;
+  background: none;
+  color:  rgb(44, 92, 176);
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.primary {
+  background-color: transparent; /* Set background color to transparent */
+  color: #000; /* Set text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0; /* Remove border radius */
+  cursor: auto;
+}
+
+.text-right {
+  text-align: left; /* Align text to the left */
+}
+.result{
+  text-align: right;
+  margin-left: 70%;
+  align-items:flex-end;
+}
+.custom-input {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-input input[type="password"] {
+  padding-right: 30px; /* Add space for the image */
+}
+
+.custom-input img {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+.circle {
+  display: inline-block;
+  border: 2px solid green;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.circle img {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  height: 20px;
+}

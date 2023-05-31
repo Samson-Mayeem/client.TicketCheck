@@ -6,9 +6,10 @@ import {
 
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { ProductsComponent } from './components/products/products.component';
 
 const routes: Routes = [
-{path:'', redirectTo: 'products', pathMatch: 'full' },
+{path:'', component:ProductsComponent },
 {path:'cart', pathMatch: 'full', component: CartComponent},
 {path:'checkout', component: CheckoutComponent}
 ];

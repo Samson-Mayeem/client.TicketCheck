@@ -6,33 +6,33 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
-  shows = [    
+  shows = [
     {
-          name: 'Show 1',      
-          image: 'https://via.placeholder.com/150',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',      
+          name: 'Music Show',
+          image: 'assets/images/logo.jpg',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           tickets:
-          [        
-            { name: 'Ticket 1', price: 10 },        
-            { name: 'Ticket 2', price: 15 }      
+          [
+            { name: 'Single', price: 10 },
+            { name: 'Couple', price: 15 }
           ]
     },
     {
-      name: 'Show 2',
+      name: 'Live Band',
       image: 'https://via.placeholder.com/150',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       tickets: [
-        { name: 'Ticket 1', price: 10 },
-        { name: 'Ticket 2', price: 15 }
+        { name: 'Single', price: 10 },
+        { name: 'Couple', price: 15 }
       ]
     },
     {
-      name: 'Show 3',
+      name: 'Comedy Night',
       image: 'https://via.placeholder.com/150',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       tickets: [
-        { name: 'Ticket 1', price: 10 },
-        { name: 'Ticket 2', price: 15 }
+        { name: 'Single', price: 10 },
+        { name: 'Couple', price: 15 }
       ]
     }
   ];

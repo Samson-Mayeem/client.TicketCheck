@@ -1,4 +1,7 @@
 <div class="gallery">
+  <div class="head">
+    <h4>Featured Shows</h4>
+  </div>
     <div class="show" *ngFor="let show of shows">
       <img [src]="show.image" alt="{{ show.name }}">
       <h2>{{ show.name }}</h2>
@@ -6,7 +9,7 @@
       <div class="tickets">
         <div *ngFor="let ticket of show.tickets">
           <h3>{{ ticket.name }}</h3>
-          <p>Price: {{ ticket.price }}</p>
+          <p>Price: {{ ticket.price *2}}</p>
           <button (click)="addToCart(show, ticket)">Add to Cart</button>
         </div>
       </div>
