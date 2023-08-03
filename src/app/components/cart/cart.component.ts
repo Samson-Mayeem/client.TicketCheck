@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent {
-
+  cartNumber: number = 0;
+  selectedTickets: any[] = [];
+  addToCart(show: any, ticket: any) {
+    this.selectedTickets.push({ show, ticket });
+    this.cartNumber = this.selectedTickets.length;
+  }
 }

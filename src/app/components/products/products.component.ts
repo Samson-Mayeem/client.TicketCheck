@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { CartService } from 'src/app/services/cart/cart.service';
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -37,10 +39,9 @@ export class ProductsComponent {
     }
   ];
 
-  cart: any[] = [];
+  constructor(private cartService: CartService) {}
 
   addToCart(show: any, ticket: any) {
-    const item = { show, ticket };
-    this.cart.push(item);
+    this.cartService.addToCart({ show, ticket });
   }
 }

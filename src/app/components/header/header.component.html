@@ -1,17 +1,18 @@
 <header>
-    <div class="navbar bg-primary shadow-sm">
-        <div class="navbar-brand align-item-center d-flex">
-            <i style="font-size: 40px;" class="fas fa-shipping-fast">
-            </i>
-            <strong style="font-size: 30px;">Shows Pill</strong>
-            <div class="form-group">
-                <input type="search" class="form-control" placeholder="Search shows">
-            </div>
-            <span class="fas fa-search search-icon"></span>
+  <div class="navbar bg-primary shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+      <i style="font-size: 40px; margin-left: 20px;" class="fas fa-film"></i>
+      <strong style="font-size: 30px; color: white; margin-left: 20px;">Shows Pill</strong>
+      <div class="form-group">
+        <div class="search-container">
+          <input type="search" class="form-control" placeholder="Search shows">
+          <span class="fas fa-search search-icon"></span>
         </div>
-        <a href="cart" class="btn btn-primary">
-          <i style="font-size: 30px; color: white; background-color: aliceblue;" class="fas fa-cart"></i>
-          <div style="font-size: 10px;" class="badge bg-danger">0</div>
-        </a>
       </div>
+    </div>
+    <a href="cart" class="btn btn-primary">
+      <i style="font-size:  35px;  transform: scale(1.1); padding: 5px;" class="fas fa-shopping-cart"></i>
+      <div style="font-size: 10px;" class="badge bg-danger">{{ cartNumber }}</div>
+    </a>
+  </div>
 </header>
